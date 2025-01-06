@@ -1,0 +1,55 @@
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        position: relative;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header section img {
+        width: 20%;
+    }
+
+    header section h1 {
+        font-size: 1.5rem;
+    }
+
+    #hamburger-button div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 1rem;
+        transition: .4s;
+    }
+
+    #hamburger-button.active div:nth-child(1) {
+        transform: translate(0, 225%) rotate(-45deg);
+    }
+
+    #hamburger-button.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger-button.active div:nth-child(3) {
+        transform: translate(0, -225%) rotate(45deg);
+    }
+
+    #menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    #menu.active a {
+        text-align: left;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}

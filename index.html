@@ -4,11 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the course home page of Carl Mislang from WDD 231">
+    <meta name="author" content="Carl Mislang">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+
     <title>WDD 231 Web Frontend Development I</title>
+
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 231 - MISLANG</h1>
+    <header>
+
+        <section>
+            <img src="images/profile-picture.jfif" alt="profile picture of Carl Mislang">
+            <h1>Carl Benedict P. Mislang</h1>
+            <div id="hamburger-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <nav id="menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="">Chamber</a>
+            <a href="" target="_blank">Github Profile</a>
+            <a href="https://www.linkedin.com/in/carlbpmislang1419/" target="_blank">LinkedIn</a>
+        </nav>
+
+    </header>
+    <main>
+
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="place">
+            <h2>Tarlac, Philippines</h2>
+            <img src="images/urdaneta-philippines-temple.jpeg" alt="picture of urdaneta temple in the philippines">
+            <p>Urdaneta Temple</p>
+        </section>
+
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <nav>
+                <a id="all-button">All</a>
+                <a id="cse-button">CSE</a>
+                <a id="wdd-button">WDD</a>
+            </nav>
+            <p id="credits-message">The total number of course credits listed below is <span id="total-credits">0</span>
+            </p>
+            <div id="courses">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <p><span id="currentyear"></span> 🖥️ Carl Benedict P. Mislang 🖥️ Philippines </p>
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
 
 </html>

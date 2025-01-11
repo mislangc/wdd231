@@ -1,0 +1,53 @@
+header {
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: darkgreen;
+}
+
+header button {
+    margin: 2px;
+    font-family: sans-serif;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background-color: lightgray;
+    padding: 1rem;
+    margin: 1rem;
+    border: gray;
+    box-shadow: 5px 5px 20px gray, -5px -5px 20px gray;
+}
+
+#cards section {
+    text-align: center;
+    margin: 2px;
+    background-color: limegreen;
+    border: 1px solid darkgreen;
+    padding: 1rem;
+}
+
+#cards section h2 {
+    font-family: "Roboto", sans-serif;
+    color: rgb(1, 67, 1);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#cards section p {
+    font-family: sans-serif;
+}
+
+#cards section img {
+    box-shadow: 5px 5px 10px;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1rem;
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "familyName": "Mislang",
+        "movedInWardDate": "2005-01-01",
+        "familyMembersCount": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Carl",
+                "gender": "Male",
+                "birthdate": "1999-01-04"
+            },
+            {
+                "name": "Charmaine",
+                "gender": "Female",
+                "birthdate": "2000-09-01"
+            },
+            {
+                "name": "Arlene",
+                "gender": "Female",
+                "birthdate": "1970-05-07"
+            },
+            {
+                "name": "Carlito",
+                "gender": "Male",
+                "birthdate": "1970-09-19"
+            }
+        ]
+    }
+]

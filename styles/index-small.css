@@ -4,7 +4,7 @@
         position: relative;
     }
 
-    header nav {
+    #menu {
         display: none;
     }
 
@@ -36,15 +36,22 @@
         transform: translate(0, -225%) rotate(45deg);
     }
 
-    #menu.active {
+    #menu {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100%;
         width: 100%;
+        top: -200%;
+        transition: .4s;
+        opacity: 0%;
     }
 
-    #menu.active a {
+    #menu.active {
+        top: 100%;
+        opacity: 100%;
+    }
+
+    #menu a {
         text-align: left;
     }
 

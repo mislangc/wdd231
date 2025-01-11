@@ -27,13 +27,13 @@ header section {
     background-color: var(--primary);
 }
 
-header nav {
+#menu {
     display: flex;
     justify-content: space-around;
     background-color: black;
 }
 
-header nav a {
+#menu a {
     text-decoration: none;
     color: white;
     font-family: "Roboto", serif;
@@ -42,7 +42,7 @@ header nav a {
     padding: 1rem;
 }
 
-header nav a:hover {
+#menu a:hover {
     background-color: var(--primary);
     color: black;
     font-weight: bolder;

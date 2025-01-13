@@ -1,0 +1,47 @@
+@media only screen and (min-width: 640px) {
+    /* ------------------------------- Header */
+
+    header {
+        justify-content: space-around;
+    }
+
+    #ham-button {
+        display: none;
+    }
+
+    #ham-menu {
+        width: 50%;
+        justify-content: flex-end;
+        position: static;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        background-color: inherit;
+    }
+
+    #ham-menu a {
+        color: black;
+        transition: .4s;
+    }
+
+    #ham-menu a:hover {
+        background-color: rgb(114, 173, 197);
+    }
+
+    /* ------------------------------- Main */
+
+    #display-cards.list section {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+
+    #display-cards.list section p:nth-child(3) {
+        display: block;
+    }
+
+
+    /* ------------------------------- Footer */
+
+    footer {
+        justify-content: space-around;
+    }
+}

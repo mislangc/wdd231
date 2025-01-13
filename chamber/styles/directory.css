@@ -1,0 +1,190 @@
+:root {
+    --base-color: skyblue;
+    --secondary-color: black;
+    --tertiary-color: white;
+}
+
+/* ------------- Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--base-color);
+    position: relative;
+}
+
+#logo-title {
+    display: flex;
+    align-items: center;
+    margin: 1px 1rem;
+}
+
+#logo-title div h1,
+#logo-title div p {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+#logo-title div {
+    margin: 5px;
+}
+
+#ham-button div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 1rem;
+    transition: .4s;
+}
+
+/* ------------- Animated Ham Button on click */
+
+#ham-button.open div:nth-child(1) {
+    transform: translate(0, 225%) rotate(-45deg);
+}
+
+#ham-button.open div:nth-child(2) {
+    opacity: 0;
+}
+
+#ham-button.open div:nth-child(3) {
+    transform: translate(0, -225%) rotate(45deg);
+}
+
+#ham-menu {
+    position: absolute;
+    top: -300%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: 100%;
+    opacity: 0;
+    transition: .4s;
+}
+
+#ham-menu.open {
+    top: 100%;
+    opacity: 1;
+}
+
+#ham-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#ham-menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+#ham-menu a.active {
+    text-decoration: underline;
+}
+
+/* ------------- Main */
+
+#display-menu {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#display-cards section h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+#display-cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+#display-cards.grid section img {
+    width: 100%;
+    max-width: 280px;
+}
+
+#display-cards.grid section {
+    margin: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#display-cards.grid section p,
+#display-cards.grid section h2 {
+    margin: 0;
+}
+
+#display-cards.list section img {
+    display: none;
+}
+
+#display-cards.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#display-cards.list section:nth-child(even) {
+    background-color: lightgray
+}
+
+#display-cards.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+}
+
+#display-cards.list section h2 {
+    font-size: medium;
+}
+
+#display-cards.list section a {}
+
+#display-cards.list section p:nth-child(3) {
+    display: none;
+}
+
+/* ------------- Footer */
+
+footer {
+    background-color: skyblue;
+    padding: 1rem 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+#social-media {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#social-media a img {
+    background: white;
+    border-radius: 30px;
+    border: 1px solid black
+}
+
+#social-media a img:hover {
+    background-color: lightgreen;
+}
+
+
+#social-media a {
+    margin: 1rem;
+}

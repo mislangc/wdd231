@@ -86,11 +86,15 @@ header {
 
 /* ------------- Main */
 
-#display-menu {
+#display-buttons {
     margin: 1rem;
     display: flex;
     justify-content: center;
     gap: .5rem;
+}
+
+#display-buttons button {
+    font-size: xx-large;
 }
 
 #display-cards section h2 {
@@ -114,6 +118,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -132,7 +137,7 @@ header {
 }
 
 #display-cards.list section:nth-child(even) {
-    background-color: lightgray
+    background-color: rgb(234, 234, 234);
 }
 
 #display-cards.list section {

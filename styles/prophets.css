@@ -8,14 +8,19 @@ header h1 {
     color: darkgreen;
 }
 
-header button {
-    margin: 2px;
+#cards-filter {
+    display: flex;
+    justify-content: center;
+}
+
+#cards-filter button {
+    margin: .5rem;
     font-family: sans-serif;
 }
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     background-color: lightgray;
     padding: 1rem;
     margin: 1rem;

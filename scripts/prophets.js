@@ -1,6 +1,6 @@
 const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 const cards = document.querySelector("#cards");
-const header = document.querySelector("header");
+const cardsFilter = document.querySelector("#cards-filter");
 
 async function getProphetData(url) {
     const response = await fetch(url);
@@ -44,12 +44,12 @@ async function getProphetData(url) {
         displayProphets(newData);
     });
 
-    header.appendChild(all);
-    header.appendChild(utah);
-    header.appendChild(idaho);
-    header.appendChild(notUS);
-    header.appendChild(tenOrMoreChildren);
-    header.appendChild(fifteenYearsService);
+    cardsFilter.appendChild(all);
+    cardsFilter.appendChild(utah);
+    cardsFilter.appendChild(idaho);
+    cardsFilter.appendChild(notUS);
+    cardsFilter.appendChild(tenOrMoreChildren);
+    cardsFilter.appendChild(fifteenYearsService);
 
     //console.table(data.prophets);
     displayProphets(data.prophets);

@@ -20,6 +20,11 @@ header {
     margin: 1px 1rem;
 }
 
+#logo-title img {
+    max-width: 60px;
+    border-radius: 30px;
+}
+
 #logo-title div h1,
 #logo-title div p {
     margin: 0 auto;

@@ -148,3 +148,45 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("active");
     menu.classList.toggle('active');
 })
+
+// ---------------------------- Display Weather
+
+const weatherIcon = document.querySelector('#weather-icon');
+const weatherDesc = document.querySelector('#weather-desc');
+const weatherTemp = document.querySelector('#weather-temp');
+const weatherCity = document.querySelector('#weather-city');
+
+const myKey = '6ef108ae00230e29d53effdbcf53b2cd'
+const cityLatitude = '15.477726577945443';
+const cityLongitude = '120.59378142540841';
+const tempUnit = 'metric';
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${cityLatitude}&lon=${cityLongitude}&units=${tempUnit}&appid=${myKey}`;
+
+async function fetchApi() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayWeather(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+function displayWeather(data) {
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+
+    weatherDesc.textContent = data.weather[0].description;
+
+    weatherTemp.innerHTML = `${data.main.temp}&deg;C`;
+
+    weatherCity.textContent = data.name;
+}
+
+fetchApi();

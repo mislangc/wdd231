@@ -12,8 +12,6 @@
     #ham-menu {
         width: 50%;
         justify-content: flex-end;
-        position: static;
-        opacity: 1;
         display: flex;
         flex-direction: row;
         background-color: inherit;

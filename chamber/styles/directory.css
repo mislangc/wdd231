@@ -4,7 +4,7 @@
     --tertiary-color: white;
 }
 
-/* ------------- Header */
+/* ------------------------------------------------ Consistent Header */
 
 header {
     display: flex;
@@ -35,6 +35,8 @@ header {
     margin: 5px;
 }
 
+/* ------------- Consistent Animated Ham Button on click */
+
 #ham-button div {
     width: 35px;
     height: 5px;
@@ -42,8 +44,6 @@ header {
     margin: 6px 1rem;
     transition: .4s;
 }
-
-/* ------------- Animated Ham Button on click */
 
 #ham-button.open div:nth-child(1) {
     transform: translate(0, 225%) rotate(-45deg);
@@ -87,7 +87,8 @@ header {
     text-decoration: underline;
 }
 
-/* ------------- Main */
+/* Directory Page -------------------------------------------------------------- */
+/* ------------------------------------------------ Main */
 
 #display-buttons {
     margin: 1rem;
@@ -161,7 +162,7 @@ header {
     display: none;
 }
 
-/* ------------- Footer */
+/* ------------------------------------------------ Consistent Footer */
 
 footer {
     background-color: skyblue;
@@ -195,4 +196,133 @@ footer p {
 
 #social-media a {
     margin: 1rem;
+}
+
+/* Home Page -------------------------------------------------------------- */
+/* ------------------------------------------------ Main */
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    margin: 5px 1rem;
+}
+
+/* Hero section ----------------------- */
+#hero-section {
+    position: relative;
+    z-index: -1;
+}
+
+#hero-image {
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+#hero-image:hover {
+    opacity: 75%;
+}
+
+#cta-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: sans-serif;
+}
+
+/* Home section ----------------------- */
+
+#front section {
+    margin: .5rem;
+    border: 1px solid black;
+}
+
+#front section h2 {
+    background-color: skyblue;
+    margin: 0;
+    padding: 5px 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Events section ----------------------- */
+
+#events-section div {
+    height: 100px;
+}
+
+/* Weather section ----------------------- */
+
+#weather-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: .5rem;
+}
+
+#weather-info img {
+    filter: drop-shadow(0px 0px 5px);
+}
+
+#weather-details p {
+    text-transform: capitalize;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#weather-details p:first-child {
+    margin: .5rem 0;
+}
+
+/* Member spotlight section ----------------------- */
+
+#spotlights {
+    margin: .5rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#spotlights .member {
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 304px;
+}
+
+#spotlights .member h2,
+#spotlights .member .level {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+#spotlights .member h2 {
+    padding-top: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+#spotlights .member .level {
+    padding-bottom: .5rem;
+}
+
+#spotlights .member .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+#spotlights .member .info .logo {
+    max-width: 60px;
+}
+
+#spotlights .member .info .contacts p {
+    font-size: small;
+    font-family: sans-serif;
 }

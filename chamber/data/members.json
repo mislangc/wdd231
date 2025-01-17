@@ -3,6 +3,7 @@
         "name": "iDigital Solutions",
         "address": "Paroba 1, Tibag, Tarlac City, Tarlac, Philippines",
         "phoneNum": "+63 928-521-0455",
+        "email": "info@idigital.ph",
         "url": "https://www.idigital.ph/",
         "image": "./images/idigital-logo.jpg",
         "membershipLevel": 1
@@ -11,6 +12,7 @@
         "name": "Sutherland Global Services",
         "address": "Tarlac IT Park II Ninoy Aquino Highway San Isidro, Tarlac City, Philippines",
         "phoneNum": "+63 45 459-2900",
+        "email": "contactbyphone@sutherlandglobal.com",
         "url": "https://www.sutherlandglobal.com/",
         "image": "./images/sutherland-logo.jpg",
         "membershipLevel": 3
@@ -20,6 +22,7 @@
         "address": "McArthur Highway corner Ligtasan Street, Tarlac City, Metro Manila, Philippines",
         "phoneNum": "+63 45 611 2053",
         "url": "https://www.lamajaricahotel.com/",
+        "email": "reservations@lamajaricahotel.com",
         "image": "./images/lamajaricahotel-logo.jpg",
         "membershipLevel": 1
     },
@@ -28,6 +31,7 @@
         "address": "Macabulos Dr, Tarlac City, Tarlac, Philippines",
         "phoneNum": "(045) 982-8781",
         "url": "https://phlpost.gov.ph/",
+        "email": "phlpostcares@phlpost.gov.ph",
         "image": "./images/philpost-logo.jpg",
         "membershipLevel": 2
     },
@@ -36,6 +40,7 @@
         "address": "Jaral Bldg. McArthur Avenue corner Juan Luna Street, Tarlac City, Tarlac, Philippines",
         "phoneNum": "(045) 982-6482",
         "url": "https://www.unionbankph.com/",
+        "email": "customer.service@unionbankph.com",
         "image": "./images/unionbank-logo.png",
         "membershipLevel": 2
     },
@@ -44,6 +49,7 @@
         "address": "Unit 2 National Road Brgy. Alfonso Concepcion, Tarlac City, Tarlac, Philippines",
         "phoneNum": "+63 917-253-6868",
         "url": "https://philpatch.com/",
+        "email": "info@philpatch.com",
         "image": "./images/philpatch-logo.png",
         "membershipLevel": 2
     },
@@ -52,6 +58,7 @@
         "address": "McArthur Highway, san Nicolas, Tarlac City, Tarlac, Philippines",
         "phoneNum": "+63 45 982-3632",
         "url": "https://www.bpi.com.ph/",
+        "email": "preferred@bpi.com.ph",
         "image": "./images/bpi-logo.jpg",
         "membershipLevel": 3
     }

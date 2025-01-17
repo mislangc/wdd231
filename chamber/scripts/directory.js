@@ -23,7 +23,7 @@ listButton.addEventListener("click", () => {
 }
 )
 
-// ---------- Get json file
+// ---------- Get JSON file
 const url = "data/members.json";
 const displayCards = document.querySelector('#display-cards');
 

@@ -96,6 +96,8 @@ main section h2 {
     font-family: sans-serif;
 }
 
+/* Course section -------------------- */
+
 #certificate {
     grid-column: 1/3;
 }
@@ -130,8 +132,9 @@ main section h2 {
     flex-wrap: wrap;
 }
 
-#certificate div p {
+#certificate div button {
     width: 30%;
+    margin: .5rem;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -139,6 +142,11 @@ main section h2 {
     font-family: sans-serif;
     font-weight: bold;
     background-color: lightgrey;
+}
+
+#courses button:hover {
+    background-color: black;
+    color: white;
 }
 
 .completed::after {
@@ -149,6 +157,40 @@ main section h2 {
     text-align: center;
     font-family: sans-serif;
 }
+
+/* Course Modal ------------------- */
+
+#course-details {
+    width: 90%;
+    max-width: 600px;
+}
+
+#course-details h2,
+#course-details h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+#course-details p {
+    font-family: sans-serif;
+}
+
+#course-details::backdrop {
+    background-color: beige;
+    opacity: 50%;
+}
+
+#course-details button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: .5rem;
+}
+
+
+
+
+
+/* Weather Section ----------------- */
 
 #weather {
     position: relative;

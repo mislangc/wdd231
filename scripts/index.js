@@ -107,35 +107,71 @@ const courses = [
 
 function courseCompleted(course) {
     totalCredits.textContent = parseInt(totalCredits.textContent) + course.credits;
-
-    if (course.completed === true) {
-        let courseCard = `<p class="completed"> ${course.subject} ${course.number}</p>`
-        return courseCard
-    } else {
-        let courseCard = `<p> ${course.subject} ${course.number}</p>`
-        return courseCard
+    const courseButton = document.createElement('button');
+    courseButton.innerText = `${course.subject} ${course.number}`;
+    if (course.completed) {
+        courseButton.classList.add('completed');
     }
+    /*
+    if (course.completed === true) {
+        courseCard = `<p id="details" class="completed"> ${course.subject} ${course.number}</p>`
+    } else {
+        courseCard = `<p id="details"> ${course.subject} ${course.number}</p>`
+    };
+    */
+    courseButton.addEventListener("click", () => {
+        modalCard(course);
+    })
+
+    myCourses.appendChild(courseButton);
 }
 
-myCourses.innerHTML = courses.map(courseCompleted).join("");
+courses.map(courseCompleted);
+
+// ---------------------------- Modal card
+
+const courseDetails = document.querySelector('#course-details');
+
+function modalCard(course) {
+    const closeButton = document.createElement('button');
+    closeButton.textContent = '❌';
+    closeButton.addEventListener('click', () => {
+        courseDetails.close();
+    })
+
+    courseDetails.innerHTML = `
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p>${course.credits} credits</p>
+        <p>Certificate: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p>Technology: ${course.technology.join(", ")}</p>`;
+
+    courseDetails.appendChild(closeButton);
+
+    courseDetails.showModal();
+}
 
 // ---------------------------- Event Listeners
 
 function displayCSECourses(course) {
     totalCredits.textContent = 0;
     let cseCourses = courses.filter(course => course.subject.charAt(0) === "C");
-    myCourses.innerHTML = cseCourses.map(courseCompleted).join("");
+    myCourses.innerHTML = '';
+    cseCourses.map(courseCompleted);
 }
 
 function displayWDDCourses(course) {
     totalCredits.textContent = 0;
     let wddCourses = courses.filter(course => course.subject.charAt(0) === "W");
-    myCourses.innerHTML = wddCourses.map(courseCompleted).join("");
+    myCourses.innerHTML = '';
+    wddCourses.map(courseCompleted);
 }
 
 function displayAllCourses(course) {
     totalCredits.textContent = 0;
-    myCourses.innerHTML = courses.map(courseCompleted).join("");
+    myCourses.innerHTML = '';
+    courses.map(courseCompleted);
 }
 
 cseButton.addEventListener("click", displayCSECourses);

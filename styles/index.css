@@ -85,15 +85,146 @@ main section h2 {
     margin: 5px;
 }
 
-#place img {
-    display: block;
-    width: 75%;
-    margin: auto;
+/* Place section --------------------- */
+
+#place {
+    position: relative;
 }
 
-#place p {
-    text-align: center;
+#place div {
+    position: relative;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+#place div:nth-child(2) {
+    opacity: 0;
+}
+
+/* Animation start positions for #place images */
+
+#place div:nth-child(3),
+#place div:nth-child(4),
+#place div:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+}
+
+#place div:nth-child(3) {
+    transform: translate(0, 10px);
+    z-index: 1;
+}
+
+#place div:nth-child(4) {
+    transform: translate(50px);
+    opacity: 0;
+}
+
+#place div:nth-child(5) {
+    transform: translate(-50px);
+    opacity: 0;
+}
+
+/* More place section css declarations ----- */
+
+#place div img {
+    width: 100%;
+}
+
+#place div p {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: .5rem;
     font-family: sans-serif;
+}
+
+/* Assign keyframes to #place images --------------------- */
+
+#place div:nth-child(3) {
+    animation: fade 20s ease-in-out infinite forwards;
+}
+
+#place div:nth-child(4) {
+    animation: fade-two 20s ease-in-out infinite forwards;
+}
+
+#place div:nth-child(5) {
+    animation: fade-three 20s ease-in-out infinite forwards;
+}
+
+/* Keyframe animations --------------------- */
+
+@keyframes fade {
+    0% {
+        transform: translate(0, 10px);
+        z-index: -1;
+    }
+
+    33% {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+
+    66% {
+        transform: translate(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 10px);
+        z-index: -1;
+    }
+}
+
+@keyframes fade-two {
+    0% {
+        transform: translate(50px);
+        opacity: 0;
+    }
+
+    33% {
+        transform: translate(0, 10px);
+        z-index: -1;
+        opacity: 1;
+    }
+
+    66% {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-three {
+    0% {
+        transform: translate(-50px);
+        opacity: 0;
+    }
+
+    33% {
+        transform: translate(50px);
+        opacity: 0;
+    }
+
+    66% {
+        transform: translate(0, 10px);
+        z-index: -1;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50px);
+        opacity: 0;
+    }
 }
 
 /* Course section -------------------- */
@@ -185,10 +316,6 @@ main section h2 {
     right: 5%;
     padding: .5rem;
 }
-
-
-
-
 
 /* Weather Section ----------------- */
 

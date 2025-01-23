@@ -113,7 +113,7 @@ header {
 
 #display-cards.grid section img {
     width: 100%;
-    max-width: 280px;
+    max-width: 150px;
 }
 
 #display-cards.grid section {

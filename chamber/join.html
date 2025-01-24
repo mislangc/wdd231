@@ -31,6 +31,7 @@
 
     <script src="scripts/ham-button.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
 </head>
 
@@ -55,11 +56,40 @@
             <a class="active" href="#">Join</a>
         </nav>
     </header>
-    <main>
-        <h1>Join Chamber</h1>
-        <form>
-            
-        </form>
+    <main id="join">
+        <dialog id="membership-modal"></dialog>
+        <section>
+            <h1>Join Chamber</h1>
+            <form method="get" action="thankyou.html">
+                <label>First Name<input type="text" required name="fname" title="Your first name"
+                        autocomplete="given-name"></label>
+                <label>Last Name<input type="text" required name="lname" title="Your last name"
+                        autocomplete="family-name"></label>
+                <label>Organizational Title<input type="text" name="orgtitle" title="Your job title"
+                        autocomplete="organization-title" pattern=""></label>
+                <label>Email<input type="email" required name="email" title="Your email" autocomplete="email"
+                        placeholder="yourname@gmail.com"></label>
+                <label>Phone Number<input type="tel" required name="phonenum" title="Your phone number"
+                        autocomplete="tel"></label>
+                <label>Business/Organization Name<input type="text" required name="orgname"
+                        title="Your organization's name" autocomplete="organization"></label>
+                <label>Organization Description<textarea
+                        title="Brief description about your organization (Optional)"></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <h3>Select Membership</h3>
+                <label><input type="radio" name="membership" value="Non profit" checked> NP Membership</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+
+                <input type="submit" value="Become a Member">
+            </form>
+        </section>
+        <section>
+            <h1>Membership Levels</h1>
+            <section id="membership-details"></section>
+        </section>
     </main>
     <footer>
         <section>

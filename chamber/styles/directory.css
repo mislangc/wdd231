@@ -347,3 +347,104 @@ h1 {
     font-size: small;
     font-family: sans-serif;
 }
+
+/* Join Page -------------------------------------------------------------- */
+/* ------------------------------------------------ Main */
+/* Form ------------- */
+#join h1,
+#join section h1 {
+    margin: 1rem;
+}
+
+form {
+    margin: 1rem;
+}
+
+form input:required {
+    background-color: rgb(255, 212, 218);
+
+}
+
+form input:required:valid {
+    background-color: rgb(190, 255, 190);
+}
+
+form>label>input[type=text],
+form>label>input[type=tel],
+form>label>input[type=email],
+form>label>textarea,
+form>label {
+    display: block;
+}
+
+form>label>input[type=text],
+form>label>input[type=tel],
+form>label>input[type=email],
+form>label>textarea {
+    padding: 8px;
+}
+
+form>label>textarea {
+    height: 80px;
+    width: 200px;
+}
+
+form>label {
+    margin: 1rem;
+    font-family: sans-serif;
+}
+
+form>h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+form>input[type=submit] {
+    padding: 8px;
+    margin-left: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Membership Modal ------------- */
+
+#membership-modal {
+    width: 80%;
+    max-width: 320px;
+}
+
+#membership-modal::backdrop {
+    background-color: grey;
+    opacity: 50%;
+}
+
+#membership-modal h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+#membership-modal p,
+#membership-modal ul {
+    font-family: sans-serif;
+}
+
+#membership-details div {
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: .5rem;
+    font-family: sans-serif;
+    background-color: lightgreen;
+}
+
+#membership-details p {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+/* Thank you Page -------------------------------------------------------------- */
+/* ------------------------------------------------ Main */
+
+#results {
+    font-family: sans-serif;
+    margin: 1rem;
+}

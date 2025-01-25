@@ -406,7 +406,7 @@ form>input[type=submit] {
     font-size: x-large;
 }
 
-/* Membership Modal ------------- */
+/* Membership Section & Modal ------------- */
 
 #membership-modal {
     width: 80%;
@@ -441,8 +441,122 @@ form>input[type=submit] {
     font-weight: bold;
 }
 
+#membership-details div:nth-child(1) {
+    animation: wave 6s ease-out infinite forwards;
+}
+
+#membership-details div:nth-child(2) {
+    animation: wave-two 6s ease-out infinite forwards;
+}
+
+#membership-details div:nth-child(3) {
+    animation: wave-three 6s ease-out infinite forwards;
+}
+
+#membership-details div:nth-child(4) {
+    animation: wave-four 6s ease-out infinite forwards;
+}
+
+/* Keyframe animations for membership-details ------------- */
+
+@keyframes wave {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    5% {
+        transform: translate(-5px, -2.5px);
+    }
+
+    10% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes wave-two {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    5% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-5px, -2.5px);
+    }
+
+    15% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes wave-three {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(-5px, -2.5px);
+    }
+
+    20% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes wave-four {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-5px, -2.5px);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
 /* Thank you Page -------------------------------------------------------------- */
 /* ------------------------------------------------ Main */
+
+#thank-you>h1 {
+    margin: 1rem;
+}
+
+#thank-you>p {
+    margin: 1rem;
+    font-family: sans-serif;
+    width: 90%;
+    max-width: 320px;
+}
 
 #results {
     font-family: sans-serif;

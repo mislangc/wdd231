@@ -9,22 +9,41 @@ const membershipData = [
     {
         name: 'Non Profit Membership',
         price: 'Free',
-        benefits: ['One', 'Two']
+        benefits: [
+            '2% All Chamber Organizations Discount',
+            '25% Trainings discount'
+        ]
     },
     {
         name: 'Bronze Membership',
         price: '$49.99/month',
-        benefits: ['One', 'Two', 'Three', 'Four']
+        benefits: [
+            '5% All Chamber Organizations Discount',
+            '50% Trainings discount',
+            'Special Events Spot'
+        ]
     },
     {
         name: 'Silver Membership',
         price: '$89.99/month',
-        benefits: ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
+        benefits: [
+            '9% All Chamber Organizations Discount',
+            'Free Trainings',
+            '2 Special Events Spots',
+            'Chamber site advertisement'
+        ]
     },
     {
         name: 'Gold Membership',
         price: '$169.99/month',
-        benefits: ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten']
+        benefits: [
+            '15% All Chamber Organizations Discount',
+            'Free Trainings',
+            '4 Special Events Spots',
+            '25% All Events discount',
+            'Chamber site advertisement',
+            'Billboards & TV Ads'
+        ]
     }
 ];
 

@@ -11,6 +11,10 @@
         display: none;
     }
 
+    #ham-menu.open {
+        position: relative;
+    }
+
     #ham-menu {
         width: 50%;
         justify-content: flex-end;

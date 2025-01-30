@@ -41,7 +41,7 @@ async function getData(url) {
 
 function makeCards(member) {
     return `<section>
-        <img src="${member.image}" alt="logo of ${member.name}">
+        <img src="${member.image}" alt="logo of ${member.name}" loading="lazy" width="120" height="120">
         <h2>${member.name}</h2>
         <p>${member.address}</p>
         <p>${member.phoneNum}</p>

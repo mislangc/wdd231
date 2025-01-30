@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1024px) {
+    #front {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    #forecast-section {
+        grid-column: inherit;
+    }
+
+    /* Discover Page -------------------------------------------------------------- */
+    /* ------------------------------------------------ Main */
+    #discover-places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #discover-places div img:hover {
+        border-radius: 0px 100% 0px 100%;
+        opacity: 85%;
+    }
+}

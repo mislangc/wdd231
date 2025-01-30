@@ -152,7 +152,7 @@ function makeCards(member) {
         <h2>${member.name}</h2>
         <p class="level">${memberLevel}</p>
         <div class="info">
-            <img class="logo" src="${member.image}" alt="logo of ${member.name}">
+            <img class="logo" src="${member.image}" alt="logo of ${member.name}" loading="lazy" width="60" height="60">
             <div class="contacts">
                 <p><strong>EMAIL:</strong> ${member.email}</p>
                 <p><strong>PHONE:</strong> ${member.phoneNum}</p>

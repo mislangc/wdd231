@@ -111,10 +111,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-#display-cards.grid section img {
-    width: 100%;
-    max-width: 150px;
-}
+/*#display-cards.grid section img {}*/
 
 #display-cards.grid section {
     margin: 5px;
@@ -561,4 +558,48 @@ form>input[type=submit] {
 #results {
     font-family: sans-serif;
     margin: 1rem;
+}
+
+/* Discover Page -------------------------------------------------------------- */
+/* ------------------------------------------------ Main */
+#discover-message {
+    font-family: sans-serif;
+    text-align: center;
+    margin: .5rem;
+    font-style: italic;
+}
+
+#discover-places div {
+    text-align: center;
+    margin: .5rem;
+    border: 1px solid black;
+    padding: .5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: rgb(232, 232, 232);
+}
+
+#discover-places div img {
+    width: 100%;
+    max-width: 300px;
+    grid-area: image;
+    transition: .4s;
+}
+
+#discover-places div h2 {
+    font-family: "Roboto", sans-serif;
+    grid-area: name;
+}
+
+#discover-places div address {
+    grid-area: address;
+}
+
+#discover-places div p {
+    grid-area: desc;
+}
+
+#discover-places div a {
+    grid-area: button;
 }

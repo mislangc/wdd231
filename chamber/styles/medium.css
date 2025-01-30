@@ -83,15 +83,15 @@
     }
 
 
-    /* Membership ----------------------- */
-}
-
-@media only screen and (min-width: 1080px) {
-    #front {
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-
-    #forecast-section {
-        grid-column: inherit;
+    /* Discover Page -------------------------------------------------------------- */
+    /* ------------------------------------------------ Main */
+    #discover-places div {
+        display: grid;
+        gap: 1rem;
+        grid-template-areas:
+            "image name"
+            "image address"
+            "image desc"
+            "image button";
     }
 }

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 640px) {
+
+    #ham-button {
+        display: none;
+    }
+
+    #ham-menu,
+    #ham-menu.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #ham-menu a:hover {
+        background-color: rgb(255, 255, 255, 0.2);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+}

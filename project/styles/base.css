@@ -1,0 +1,65 @@
+header {
+    display: grid;
+    grid-template-columns: auto 44px;
+    align-items: center;
+    gap: .5rem;
+}
+
+header img {
+    margin: .5rem;
+}
+
+nav {
+    background-color: darkgreen;
+}
+
+#ham-button::before {
+    content: "\2630";
+}
+
+#ham-button.open::before {
+    content: "X";
+}
+
+#ham-button {
+    font-size: 2rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+#ham-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ham-menu li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+li.active a {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}

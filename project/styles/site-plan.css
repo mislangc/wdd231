@@ -1,0 +1,146 @@
+header {
+    text-align: center;
+    padding: .5rem;
+    background-color: darkgreen;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#site-plan section {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#scenarios p {
+    margin-bottom: 5rem;
+}
+
+#color-scheme p:nth-child(1) {
+    background-color: #ff3131;
+}
+
+#color-scheme p:nth-child(2) {
+    background-color: #000000;
+    color: white;
+}
+
+#color-scheme p:nth-child(3) {
+    background-color: #014aad;
+    color: white;
+}
+
+#color-scheme p:nth-child(4) {
+    background-color: #ffffff;
+}
+
+#color-scheme p:nth-child(5) {
+    background-color: #716461;
+    color: white;
+}
+
+#color-scheme p {
+    padding: 1rem;
+    border: 1px solid black;
+    max-width: 320px;
+    margin: auto;
+}
+
+#color-scheme-ex {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#color-scheme-ex p {
+    margin: 0;
+}
+
+#color-scheme-ex p:nth-child(1) {
+    color: #014aad;
+    font-family: "Road Rage", sans-serif;
+    font-size: xx-large;
+}
+
+#color-scheme-ex p:nth-child(2) {
+    color: #ff3131;
+    font-family: "Road Rage", sans-serif;
+    font-size: x-large;
+}
+
+#color-scheme-ex p:nth-child(3) {
+    margin-top: 1rem;
+    font-family: sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#color-scheme-nav {
+    background-color: #716461;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    color: white;
+    margin: 1rem 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#color-scheme-nav a {
+    padding: 1rem;
+    width: 100%;
+}
+
+#color-scheme-nav a:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+#heading-font {
+    font-family: "Road Rage", sans-serif;
+    font-size: xx-large;
+}
+
+#paragraph-font {
+    font-family: sans-serif;
+}
+
+#site-plan section h2,
+#wireframe h3 {
+    margin-top: 5rem;
+}
+
+#site-plan section img {
+    width: 100%;
+}
+
+#site-plan section img.logo {
+    max-width: 320px;
+}
+
+#site-plan section img.mobile {
+    max-width: 320px;
+}
+
+#site-plan section img.large {
+    max-width: 640px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: darkgreen;
+    padding: .5rem;
+    margin-top: 5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}

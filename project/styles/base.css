@@ -1,3 +1,6 @@
+/* -------------------- ALL PAGES -------------------- */
+/* Header */
+
 header {
     display: grid;
     grid-template-columns: auto 44px;
@@ -19,6 +22,7 @@ nav {
 
 #ham-button.open::before {
     content: "X";
+    font-family: sans-serif;
 }
 
 #ham-button {
@@ -62,4 +66,49 @@ nav ul {
 
 nav.open {
     grid-template-rows: 1fr;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 5rem;
+    font-family: sans-serif;
+}
+
+footer section.address p {
+    margin: 0;
+}
+
+footer img.logo,
+footer section.address,
+footer section.social-media {
+    margin: 1rem;
+}
+
+footer p.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/* -------------------- Scripture Page -------------------- 
+Main */
+
+#verse-section {
+    margin: .5rem;
+}
+
+#verse-section>div {
+    background-color: palegoldenrod;
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem 0;
+    border: 1px solid black;
+}
+
+#verse-section>div>h2 {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    color: #000000;
 }

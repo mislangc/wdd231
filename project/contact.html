@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carl Mislang">
+    <meta name="description" content="Project form page in WDD 231">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+
+    <!-- Title -->
+    <title>Contact Us: Scripture Memorizer</title>
+
+    <!-- JavaScripts -->
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/project-logo.png" width="240" height="80">
+        <button id="ham-button"></button>
+    </header>
+    <nav id="animate-me">
+        <ul id="ham-menu">
+            <li><a href="../project/">Home</a></li>
+            <li><a href="scripture.html">Scripture</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main id="contact-us">
+        <h1>Contact us</h1>
+        <form method="get" action="thank-you.html">
+            <input type="text" required name="name" title="Your name" placeholder="Name" autocomplete="given-name">
+            <input type="email" required name="email" title="Your email" autocomplete="email" placeholder="Email">
+            <textarea title="Your brief message to us" name="message"
+                placeholder="Questions, Concerns, etc."></textarea>
+            <input type="submit" value="Send a Message">
+        </form>
+    </main>
+    <footer>
+        <img class="logo" src="images/project-logo.png" alt="website logo" width="180" height="60" loading="lazy">
+        <section class="address">
+            <p>Tibag, Tarlac City</p>
+            <p>Tarlac, Philippines</p>
+        </section>
+        <section class="social-media">
+            <img src="images/linkedin-logo.png" alt="linkedin logo" width="30" height="30" loading="lazy">
+            <img src="images/twitter-logo.png" alt="twitter logo" width="30" height="30" loading="lazy">
+            <img src="images/youtube-logo.png" alt="youtube logo" width="30" height="30" loading="lazy">
+        </section>
+        <p class="copyright">&copy; <span id="current-year">20XX</span> Scripture Memorizer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

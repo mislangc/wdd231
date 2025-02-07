@@ -6,6 +6,7 @@ header {
     grid-template-columns: auto 44px;
     align-items: center;
     gap: .5rem;
+    border-bottom: 1px solid black;
 }
 
 header img {
@@ -13,7 +14,7 @@ header img {
 }
 
 nav {
-    background-color: darkgreen;
+    background-color: #716461;
 }
 
 #ham-button::before {
@@ -48,6 +49,8 @@ nav {
     padding: .75rem 2vw;
     color: white;
     text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 li.active a {
@@ -91,18 +94,89 @@ footer p.copyright {
     text-align: center;
 }
 
+/* -------------------- Home Page -------------------- 
+Main */
+#hero-section {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#hero-section #hero-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+#hero-section #hero-heading {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+#hero-section button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#hero-section #hero-description {
+    padding: 1rem;
+}
+
+
+
+
 /* -------------------- Scripture Page -------------------- 
 Main */
 
+#verse-modal {
+    max-width: 440px;
+}
+
+#verse-modal h2 {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+#verse-modal p {
+    font-family: sans-serif;
+}
+
+#verse-modal button {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    margin-right: 1rem;
+    padding: 8px;
+}
+
+#verse-modal button:hover {
+    color: palegoldenrod;
+}
+
+#verse-modal button:first-child {
+    background-color: transparent;
+    border: none;
+}
+
+#verse-modal button:first-child:hover {
+    background-color: palegoldenrod;
+}
+
+
 #verse-section {
     margin: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
 }
 
 #verse-section>div {
     background-color: palegoldenrod;
     text-align: center;
     padding: 1rem;
-    margin: .5rem 0;
+    margin: .5rem;
     border: 1px solid black;
 }
 
@@ -111,4 +185,84 @@ Main */
     font-weight: 400;
     font-size: xx-large;
     color: #000000;
+}
+
+#verse-section>div>p {
+    font-family: sans-serif;
+}
+
+#verse-section>div>p>span {
+    font-weight: 400;
+    font-family: "Road Rage", sans-serif;
+    font-size: x-large;
+}
+
+#verse-section>div>p>span.easy {
+    color: darkgreen;
+}
+
+#verse-section>div>p>span.medium {
+    color: #014aad;
+}
+
+#verse-section>div>p>span.hard {
+    color: darkred;
+}
+
+#verse-section>div>button {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* -------------------- Contact us Page -------------------- 
+Main */
+
+#contact-us h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#contact-us form input,
+#contact-us form textarea {
+    width: 100%;
+    max-width: 256px;
+    padding: 8px;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+#contact-us form textarea {
+    height: 10rem;
+}
+
+#contact-us form input[type=submit] {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 272px;
+}
+
+/* -------------------- Thank you Page -------------------- 
+Main */
+
+#thank-you {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    max-width: 256px;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#contact-us p.message {
+    font-family: sans-serif;
+    text-align: center;
+
 }

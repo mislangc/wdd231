@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1024px) {
+    /* -------------------- Contact us Page -------------------- 
+    Main */
+
+    #contact-us form input,
+    #contact-us form textarea {
+        max-width: 512px;
+    }
+
+    #contact-us form textarea {
+        height: 15rem;
+    }
+
+    #contact-us form input[type="submit"] {
+        max-width: 528px;
+    }
+
+    /* Footer */
+    footer {
+        grid-template-areas:
+            "logo address social"
+            "copy copy copy";
+    }
+
+}

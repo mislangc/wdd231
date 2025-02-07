@@ -14,15 +14,18 @@ verses.map(verseCards);
 function verseCards(verse) {
     const div = document.createElement('div');
     const h2 = document.createElement('h2');
+    const p = document.createElement('p');
     const button = document.createElement('button');
 
     h2.textContent = verse.title;
+    p.innerHTML = `Difficulty: <span class="${verse.difficulty}">${verse.difficulty.toUpperCase()}</span>`;
     button.textContent = 'Memorize';
     button.addEventListener('click', () => {
         modalContent(verse);
     });
 
     div.appendChild(h2);
+    div.appendChild(p);
     div.appendChild(button);
 
     verseSection.appendChild(div);

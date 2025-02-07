@@ -17,4 +17,36 @@
     nav {
         grid-template-rows: 1fr;
     }
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-areas:
+            "logo address"
+            "logo social"
+            "copy copy";
+        justify-content: space-between;
+    }
+
+    footer>img {
+        grid-area: logo;
+    }
+
+    footer>section.address {
+        grid-area: address;
+    }
+
+    footer>section.social-media {
+        grid-area: social;
+    }
+
+    footer>p {
+        grid-area: copy;
+    }
+
+    /* -------------------- Home Page -------------------- 
+    Main */
+    #hero-section #hero-image {
+        height: 320px;
+    }
 }

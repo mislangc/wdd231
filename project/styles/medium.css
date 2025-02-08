@@ -49,4 +49,16 @@
     #hero-section #hero-image {
         height: 320px;
     }
+
+    #home #activity {
+        display: flex;
+    }
+
+    #home #activity div {
+        flex-direction: column;
+    }
+
+    #home #activity div:nth-child(even) {
+        flex-direction: column;
+    }
 }

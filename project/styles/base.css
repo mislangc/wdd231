@@ -123,6 +123,56 @@ Main */
     padding: 1rem;
 }
 
+#home #benefits,
+#home>h2 {
+    text-align: center;
+}
+
+#home>h2 {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    margin-top: 5rem;
+}
+
+#home #benefits div img {
+    border-radius: 50%;
+}
+
+#home #benefits div h2 {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin: .5rem 0;
+}
+
+#home #benefits div p {
+    font-family: sans-serif;
+    padding: 1rem;
+    margin: .5rem 0;
+}
+
+#home #benefits div {
+    margin-bottom: 5rem;
+}
+
+#home #activity div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem auto;
+    max-width: 195px;
+}
+
+#home #activity div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#home #activity div p {
+    font-family: sans-serif;
+    width: 80px;
+    text-align: center;
+}
 
 
 

@@ -22,4 +22,16 @@
             "copy copy copy";
     }
 
+    /* -------------------- Home Page -------------------- 
+    Main */
+    #home #benefits {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #home #benefits div {
+        max-width: 320px;
+    }
+
+
 }

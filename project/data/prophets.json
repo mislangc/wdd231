@@ -1,0 +1,148 @@
+[
+    {
+        "name": "Lehi",
+        "description": "Lehi is one of the central figures in the Book of Mormon. He was a prophet who led his family from Jerusalem to the Americas.",
+        "book": "Book of Mormon",
+        "image": "placeholder.webp",
+        "verses": [
+            "1 Nephi 1",
+            "1 Nephi 2-3",
+            "2 Nephi 1-4"
+        ]
+    },
+    {
+        "name": "Nephi",
+        "description": "Nephi, Lehi's son, is one of the most prominent prophets. He is known for his leadership, writings, and unwavering faith in God.",
+        "book": "Book of Mormon",
+        "image": "nephi.webp",
+        "verses": [
+            "1 Nephi 1-22",
+            "2 Nephi 1-33"
+        ]
+    },
+    {
+        "name": "Jacob",
+        "description": "Jacob, the younger brother of Nephi, was a prophet who preached to the Nephites and emphasized faith in Christ.",
+        "book": "Book of Mormon",
+        "image": "jacob.webp",
+        "verses": [
+            "2 Nephi 6-10",
+            "Jacob 1-7"
+        ]
+    },
+    {
+        "name": "Mosiah I",
+        "description": "King Mosiah I was a righteous king who helped the Nephites in times of turmoil and played a role in the spiritual guidance of his people.",
+        "book": "Book of Mormon",
+        "image": "placeholder.webp",
+        "verses": [
+            "Mosiah 1-2"
+        ]
+    },
+    {
+        "name": "Alma the Elder",
+        "description": "Alma the Elder was a former priest of King Noah who became a prophet and established the Church among the Nephites.",
+        "book": "Book of Mormon",
+        "image": "placeholder.webp",
+        "verses": [
+            "Mosiah 23-24",
+            "Alma 1-5"
+        ]
+    },
+    {
+        "name": "Alma the Younger",
+        "description": "Alma the Younger, initially a rebellious figure, later repented and became a great prophet and leader among the Nephites.",
+        "book": "Book of Mormon",
+        "image": "alma-the-younger.webp",
+        "verses": [
+            "Alma 36-42",
+            "Alma 43-63"
+        ]
+    },
+    {
+        "name": "Samuel the Lamanite",
+        "description": "Samuel the Lamanite is a prophet who preached to the Nephites, calling them to repentance. He is well known for his prophecies about the coming of Christ.",
+        "book": "Book of Mormon",
+        "image": "samuel-the-lamanite.webp",
+        "verses": [
+            "Helaman 13-15"
+        ]
+    },
+    {
+        "name": "Mormon",
+        "description": "Mormon was the prophet who compiled and edited much of the Book of Mormon. He witnessed the destruction of the Nephite civilization.",
+        "book": "Book of Mormon",
+        "image": "mormon.webp",
+        "verses": [
+            "Mormon 1-7",
+            "Mormon 8-9"
+        ]
+    },
+    {
+        "name": "Moroni",
+        "description": "Moroni, the son of Mormon, was the last prophet in the Book of Mormon. He sealed up the records and buried them before the final destruction of his people.",
+        "book": "Book of Mormon",
+        "image": "moroni.webp",
+        "verses": [
+            "Moroni 1-10"
+        ]
+    },
+    {
+        "name": "Moses",
+        "description": "Moses is a central prophet in the Bible, known for leading the Israelites out of Egypt, receiving the Ten Commandments, and guiding the people through the wilderness.",
+        "book": "Bible",
+        "image": "moses.webp",
+        "verses": [
+            "Exodus 3-14",
+            "Exodus 19-34",
+            "Deuteronomy 1-34"
+        ]
+    },
+    {
+        "name": "Elijah",
+        "description": "Elijah was a prophet in the Bible known for his confrontation with the prophets of Baal and his ascent to heaven in a whirlwind.",
+        "book": "Bible",
+        "image": "placeholder.webp",
+        "verses": [
+            "1 Kings 17-19",
+            "2 Kings 1-2"
+        ]
+    },
+    {
+        "name": "Isaiah",
+        "description": "Isaiah is one of the major prophets in the Bible, known for his prophecies regarding the coming of the Messiah and the future restoration of Israel.",
+        "book": "Bible",
+        "image": "isaiah.webp",
+        "verses": [
+            "Isaiah 1-66"
+        ]
+    },
+    {
+        "name": "Jeremiah",
+        "description": "Jeremiah was a prophet in the Bible who preached to the Israelites during the destruction of Jerusalem and foretold the coming of a new covenant.",
+        "book": "Bible",
+        "image": "jeremiah.webp",
+        "verses": [
+            "Jeremiah 1-52",
+            "Lamentations 1-5"
+        ]
+    },
+    {
+        "name": "Daniel",
+        "description": "Daniel was a prophet in the Bible who interpreted dreams and visions, and he was known for his faithfulness to God even in the face of danger in Babylon.",
+        "book": "Bible",
+        "image": "daniel.webp",
+        "verses": [
+            "Daniel 1-12"
+        ]
+    },
+    {
+        "name": "Ezekiel",
+        "description": "Ezekiel was a prophet who had a series of powerful visions and prophecies during the Babylonian exile, including the vision of the valley of dry bones.",
+        "book": "Bible",
+        "image": "ezekiel.webp",
+        "verses": [
+            "Ezekiel 1-48"
+        ]
+    }
+]

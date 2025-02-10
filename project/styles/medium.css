@@ -52,10 +52,12 @@
 
     #home #activity {
         display: flex;
+        justify-content: center;
     }
 
     #home #activity div {
         flex-direction: column;
+        margin: 1rem;
     }
 
     #home #activity div:nth-child(even) {

@@ -9,8 +9,72 @@ const verseModal = document.querySelector('#verse-modal');
 //const verseReset = document.querySelector('#verse-reset');
 const verseSection = document.querySelector('#verse-section');
 
+// Filter buttons
+const noFilter = document.querySelector('button.all');
+const bomFilter = document.querySelector('button.book-of-mormon');
+const bibleFilter = document.querySelector('button.bible');
+const easyFilter = document.querySelector('button.easy');
+const mediumFilter = document.querySelector('button.medium');
+const hardFilter = document.querySelector('button.hard');
+
 verses.map(verseCards);
 
+function switchFilter(value) {
+    verseSection.innerHTML = "";
+    let filtered;
+    switch (value) {
+        case 'all':
+            verses.map(verseCards);
+            break;
+        case 'Book of Mormon':
+            filtered = verses.filter(verse => verse.book === value);
+            filtered.map(verseCards);
+            break;
+        case 'Bible':
+            filtered = verses.filter(verse => verse.book === value);
+            filtered.map(verseCards);
+            break;
+        case 'easy':
+            filtered = verses.filter(verse => verse.difficulty === value);
+            filtered.map(verseCards);
+            break;
+        case 'medium':
+            filtered = verses.filter(verse => verse.difficulty === value);
+            filtered.map(verseCards);
+            break;
+        case 'hard':
+            filtered = verses.filter(verse => verse.difficulty === value);
+            filtered.map(verseCards);
+            break;
+    }
+}
+
+noFilter.addEventListener('click', () => {
+    switchFilter('all');
+})
+
+bomFilter.addEventListener('click', () => {
+    switchFilter('Book of Mormon');
+})
+
+bibleFilter.addEventListener('click', () => {
+    switchFilter('Bible');
+})
+
+easyFilter.addEventListener('click', () => {
+    switchFilter('easy');
+})
+
+mediumFilter.addEventListener('click', () => {
+    switchFilter('medium');
+})
+
+hardFilter.addEventListener('click', () => {
+    switchFilter('hard');
+})
+
+
+//Create verse cards for every scripture verse in the imported verses object
 function verseCards(verse) {
     const div = document.createElement('div');
     const h2 = document.createElement('h2');
@@ -59,8 +123,7 @@ function modalContent(verse) {
         let count = 0;
         let nonBlanks = 0;
 
-        // Check if there are words left
-
+        // Check if word is blank. If word is not blank, add 1 to nonBlanks variable
         wordArray.forEach((word) => {
             if (!word.includes("_")) {
                 nonBlanks += 1;
@@ -68,7 +131,6 @@ function modalContent(verse) {
         })
 
         // Do this code if there are words left
-
         if (nonBlanks > 0) {
             while (count < 1) {
                 const randomNum = Math.floor(Math.random() * wordArray.length);
@@ -85,14 +147,12 @@ function modalContent(verse) {
             verseDescription.textContent = wordArray.join(" ");
 
             // If there are no more words left, alert the user
-
         } else {
             alert('There are no more words to filter.');
         }
     });
 
     // Reset button: restore all words in the scripture verse
-
     verseReset.addEventListener('click', () => {
         wordArray = verseText.split(" ");
         verseDescription.textContent = wordArray.join(" ");

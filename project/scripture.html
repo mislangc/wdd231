@@ -7,7 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carl Mislang">
-    <meta name="description" content="Project scripture page in WDD 231">
+    <meta name="description" content="Project second page in WDD 231">
+
+    <!-- Meta tags: Social Media -->
+    <meta property="og:title" content="Scripture: Scripture Memorizer">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://cdn12.picryl.com/photo/2016/12/31/open-book-bible-scripture-religion-d54ad2-1024.jpg">
+    <meta property="og:url" content="https://mislangc.github.io/project">
+    <meta property="og:description" content="Memorizing verses might be the start of your own scripture reading.">
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -15,8 +23,10 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <!-- Google Fonts -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,7 +40,6 @@
     <script src="scripts/header.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/scripture.js" type="module"></script>
-
 </head>
 
 <body>
@@ -42,10 +51,11 @@
         <ul id="ham-menu">
             <li><a href="../project/">Home</a></li>
             <li class="active"><a href="scripture.html">Scripture</a></li>
+            <li><a href="prophets.html">Prophets</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="sripture">
         <dialog id="verse-modal">
             <button id="verse-close"></button>
             <h2 id="verse-title">John 3:16</h2>
@@ -55,6 +65,14 @@
             <button id="verse-minus">Add blank</button>
             <button id="verse-reset">Reset</button>
         </dialog>
+        <section id="filter-buttons">
+            <button class="all">All</button>
+            <button class="book-of-mormon">Book of Mormon</button>
+            <button class="bible">Bible</button>
+            <button class="easy">Easy</button>
+            <button class="medium">Medium</button>
+            <button class="hard">Hard</button>
+        </section>
         <section id="verse-section">
 
         </section>

@@ -219,7 +219,7 @@ Main */
 #verse-section {
     margin: .5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
 }
 
 #verse-section>div {
@@ -266,6 +266,59 @@ Main */
     padding: 8px;
     cursor: pointer;
 }
+
+/* -------------------- Prophets Page -------------------- 
+Main */
+
+/* Filter buttons CSS for both Prophets and Scripture page */
+#filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+#filter-buttons button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter-buttons button:hover {
+    color: palegoldenrod;
+}
+
+#show-prophets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+}
+
+#show-prophets div {
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#show-prophets div img {
+    border-radius: 50%;
+}
+
+#show-prophets div h2 {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+#show-prophets div p {
+    font-family: sans-serif;
+}
+
+
+
 
 /* -------------------- Contact us Page -------------------- 
 Main */

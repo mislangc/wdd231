@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carl Mislang">
-    <meta name="description" content="Project form page in WDD 231">
+    <meta name="description" content="Project fourth page in WDD 231">
 
     <!-- Meta tags: Social Media -->
-    <meta property="og:title" content="Contact: Scripture Memorizer">
+    <meta property="og:title" content="Quiz: Scripture Memorizer">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://cdn12.picryl.com/photo/2016/12/31/open-book-bible-scripture-religion-d54ad2-1024.jpg">
@@ -34,12 +34,12 @@
         rel="stylesheet">
 
     <!-- Title -->
-    <title>Contact: Scripture Memorizer</title>
+    <title>Quiz: Scripture Memorizer</title>
 
     <!-- JavaScripts -->
     <script src="scripts/header.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/result.js" defer></script>
 </head>
 
 <body>
@@ -49,17 +49,21 @@
     </header>
     <nav id="animate-me">
         <ul id="ham-menu">
-            <li><a href="../project/">Home</a></li>
+            <li><a href="../project">Home</a></li>
             <li><a href="scripture.html">Scripture</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
+            <li class="active"><a href="quiz.html">Quiz</a></li>
             <li><a href="prophets.html">Prophets</a></li>
-            <li class="active"><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <main id="contact-us">
-        <h1>Contact us</h1>
-        <section id="thank-you"></section>
-        <p class="message">Thank you for messaging us! We'll contact you soon through your email.</p>
+    <main id="result">
+        <section id="quiz-result">
+
+        </section>
+        <section id="buttons">
+            <a href="scripture.html"><button>Back to Scriptures</button></a>
+            <a href="quiz.html"><button>Next Question</button></a>
+        </section>
     </main>
     <footer>
         <img class="logo" src="images/project-logo.png" alt="website logo" width="180" height="60" loading="lazy">

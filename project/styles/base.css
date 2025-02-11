@@ -215,6 +215,11 @@ Main */
     background-color: palegoldenrod;
 }
 
+#show-last-visit {
+    text-align: center;
+    font-family: "Road Rage", sans-serif;
+    font-size: x-large;
+}
 
 #verse-section {
     margin: .5rem;
@@ -317,7 +322,80 @@ Main */
     font-family: sans-serif;
 }
 
+/* -------------------- Quiz Page -------------------- 
+Main */
+#quiz #developers-message {
+    text-align: center;
+    background-color: palegoldenrod;
+    padding: 1rem;
+    font-family: sans-serif;
+}
 
+#quiz #show-question {
+    text-align: center;
+    padding: 1rem;
+    max-width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    font-family: sans-serif;
+    border-bottom: none;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 5px -5px #014aad;
+}
+
+#quiz form {
+    max-width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 1rem;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+    box-shadow: -5px 5px #ff0000;
+}
+
+#quiz form label {
+    display: block;
+    margin: .5rem;
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+#quiz form label:nth-child(even) {
+    background-color: rgb(225, 225, 225);
+}
+
+#quiz form input[type=submit] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* -------------------- Result Page -------------------- 
+Main */
+#result #quiz-result {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 5rem;
+}
+
+#result #buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#result #buttons button {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+}
 
 
 /* -------------------- Contact us Page -------------------- 
@@ -335,6 +413,14 @@ Main */
     padding: 8px;
     display: block;
     margin: 1.5rem auto;
+}
+
+#contact-us form input:required {
+    border-left: 5px solid #ff0000;
+}
+
+#contact-us form input:required:valid {
+    border-left: 5px solid green;
 }
 
 #contact-us form textarea {

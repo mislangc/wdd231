@@ -18,6 +18,14 @@ const showInfo = document.querySelector('#thank-you');
 showInfo.innerHTML = `
     <p><strong>Name:</strong> ${show("name")}</p>
      <p><strong>Email</strong>: ${show("email")}</p>
-      <p><strong>Message</strong>: ${show("message")}</p>
 `;
+if (show("message") != "") {
+    showInfo.innerHTML += `
+        <p><strong>Message</strong>: ${show("message")}</p>
+    `
+} else {
+    showInfo.innerHTML += `
+        <p><strong>Message</strong>: None</p>
+    `
+}
 

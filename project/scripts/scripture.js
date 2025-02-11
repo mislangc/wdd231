@@ -17,6 +17,29 @@ const easyFilter = document.querySelector('button.easy');
 const mediumFilter = document.querySelector('button.medium');
 const hardFilter = document.querySelector('button.hard');
 
+// Get element for showing last visit message using localStorage
+const showLastVisit = document.querySelector('#show-last-visit');
+const currentDate = new Date();
+const lastVisitDate = localStorage.getItem("lastVisit");
+const msToDays = 86400000;
+
+if (lastVisitDate) {
+    const msBetweenVisit = currentDate.getTime() - parseInt(lastVisitDate);
+    const days = msBetweenVisit / msToDays;
+    if (days < 1) {
+        showLastVisit.textContent = "Back so soon! Awesome!"
+    } else if (days > 1 && days < 2) {
+        showLastVisit.textContent = `Welcome back! You last visited ${Math.floor(days)} day ago.`;
+    } else {
+        showLastVisit.textContent = `Welcome back! You last visited ${Math.floor(days)} days ago.`
+    }
+} else {
+    showLastVisit.textContent = "Welcome! This is your first visit.";
+}
+
+localStorage.setItem("lastVisit", currentDate.getTime());
+
+// Verse card elements code
 verses.map(verseCards);
 
 function switchFilter(value) {

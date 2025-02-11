@@ -89,6 +89,10 @@ footer section.social-media {
     margin: 1rem;
 }
 
+footer section.social-media img {
+    cursor: pointer;
+}
+
 footer p.copyright {
     margin-top: 5rem;
     text-align: center;
@@ -112,11 +116,17 @@ Main */
     font-size: xx-large;
 }
 
-#hero-section button {
+#hero-section a {
     background-color: black;
     color: white;
     padding: 8px;
     cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero-section a:hover {
+    color: palegoldenrod;
 }
 
 #hero-section #hero-description {
@@ -375,6 +385,10 @@ Main */
     font-weight: bold;
 }
 
+#quiz form input[type=submit]:hover {
+    color: palegoldenrod;
+}
+
 /* -------------------- Result Page -------------------- 
 Main */
 #result #quiz-result {
@@ -389,12 +403,17 @@ Main */
     gap: 1rem;
 }
 
-#result #buttons button {
+#result #buttons a {
     padding: 8px;
     background-color: black;
     color: white;
     font-family: sans-serif;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#result #buttons a:hover {
+    color: palegoldenrod;
 }
 
 

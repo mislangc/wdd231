@@ -43,11 +43,22 @@ async function getProphetsData(data) {
 
 function prophetCards(prophet) {
     const card = document.createElement('div');
-    card.innerHTML = `
+
+    if (prophet.name === "Lehi" || prophet.name === "Nephi") {
+        card.innerHTML = `
+        <img src="images/${prophet.image}" alt="picture of ${prophet.name} the prophet in the ${prophet.book} width="280" height="280">
+        <h2>${prophet.name}</h2>
+        <p>${prophet.description}</p>
+    `;
+    } else {
+        card.innerHTML = `
         <img src="images/${prophet.image}" alt="picture of ${prophet.name} the prophet in the ${prophet.book} width="280" height="280" loading="lazy">
         <h2>${prophet.name}</h2>
         <p>${prophet.description}</p>
     `;
+    }
+
+
 
     prophet.verses.forEach((verse) => {
         const p = document.createElement('p');

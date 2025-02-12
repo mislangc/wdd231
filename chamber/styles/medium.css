@@ -89,9 +89,9 @@
         display: grid;
         gap: 1rem;
         grid-template-areas:
-            "image name"
-            "image address"
+            "name name"
             "image desc"
-            "image button";
+            "image address"
+            "button button";
     }
 }

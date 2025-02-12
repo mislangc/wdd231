@@ -570,7 +570,6 @@ form>input[type=submit] {
 }
 
 #discover-places div {
-    text-align: center;
     margin: .5rem;
     border: 1px solid black;
     padding: .5rem;
@@ -578,6 +577,13 @@ form>input[type=submit] {
     font-family: sans-serif;
     border-radius: 5px;
     background-color: rgb(232, 232, 232);
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "desc"
+        "address"
+        "button";
 }
 
 #discover-places div img {
@@ -602,4 +608,11 @@ form>input[type=submit] {
 
 #discover-places div a {
     grid-area: button;
+    margin: 1rem;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
 }
